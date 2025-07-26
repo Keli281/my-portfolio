@@ -110,21 +110,27 @@ footer {
     font-size: 0.9rem;
     margin-top: 2rem;
 }
-.cv-download {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-    display: inline-block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.cv-button {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  margin: 20px auto;
+  width: fit-content;
 }
 
-.cv-download:hover {
-    opacity: 0.85;
-    transform: scale(1.02);
+.cv-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
