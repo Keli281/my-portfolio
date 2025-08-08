@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ======================
-         BASIC META & TITLE 
-         ====================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie Awinja Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- ======================
-         HERO/ABOUT SECTION 
-         ====================== -->
-    <header>
-        <h1>About Me</h1>
-        <p>
-            Hi, I'm Natalie Awinja Keli, a second year Computer Science student with aspirations to specialize in AI/ML engineering and data science. With a strong passion for technology and innovation, I'm committed to sharpening my skills in programming, problem-solving, and collaborative development. My goal is to become a well-rounded developer capable of building scalable, user-centered solutions that address real-world challenges.
-            <br><br>
-            I have foundational knowledge in C programming language, HTML, and CSS, and I'm currently focused on building a strong technical base in Python, Git, and MySQL to support my journey into intelligent systems and data-driven development. Every line of code I write brings me closer to the impactful career I envision.
-        </p>
-    </header>
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">Natalie Awinja</div>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-    <!-- ======================
-         SKILLS SECTION 
-         ====================== -->
+    <section id="about" class="hero-section">
+        <div class="about-layout-container">
+            <div class="about-image-wrapper">
+                <img src="image.jpg" alt="Natalie Awinja" class="profile-image">
+            </div>
+            
+            <div class="about-content-wrapper">
+                <h1 class="about-title">About Me</h1>
+                <h1 class="about-name">Natalie Awinja</h1>
+                <p class="about-description">
+                    Hi, I'm Natalie Awinja Keli, a second year Computer Science student with aspirations to specialize in AI/ML engineering and data science. With a strong passion for technology and innovation, I'm committed to sharpening my skills in programming, problem-solving, and collaborative development. My goal is to become a well-rounded developer capable of building scalable, user-centered solutions that address real-world challenges.
+                    <br><br>
+                    I have foundational knowledge in C programming language, HTML, and CSS, and I'm currently focused on building a strong technical base in Python, Git, and MySQL to support my journey into intelligent systems and data-driven development. Every line of code I write brings me closer to the impactful career I envision.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+    
     <section id="skills">
         <h2>Skills & Proficiency</h2>
         
-        <!-- Technical Skills Subsection -->
         <h3>Technical Skills</h3>
         <ul>
             <li>Python (Beginner level)</li>
@@ -37,14 +54,12 @@
             <li>Git & GitHub (Basic version control)</li>
         </ul>
 
-        <!-- Tools Subsection -->
         <h3>Tools</h3>
         <ul>
             <li>Visual Studio Code</li>
             <li>Git Bash</li>
         </ul>
 
-        <!-- Soft Skills Subsection -->
         <h3>Soft Skills</h3>
         <ul>
             <li>Problem-solving</li>
@@ -56,9 +71,6 @@
         </ul>
     </section>
 
-    <!-- ======================
-         INTERESTS SECTION 
-         ====================== -->
     <section id="interests">
         <h2>Interests</h2>
         <p>
@@ -66,9 +78,6 @@
         </p>
     </section>
 
-    <!-- ======================
-         EDUCATION SECTION 
-         ====================== -->
     <section id="education">
         <h2>Education</h2>
         <ul>
@@ -93,13 +102,9 @@
             </li>
         </ul>
         <br>
-        <!-- CV Download Button -->
         <a href="Natalie_CV.pdf" download class="cv-button">📜 Download My CV</a>
     </section>
 
-    <!-- ======================
-         CERTIFICATIONS SECTION 
-         ====================== -->
     <section class="certifications">
         <h2>Certifications</h2>
         <ul>
@@ -112,50 +117,111 @@
         </ul>
     </section>
 
-    <!-- ======================
-         PROJECTS SECTION 
-         ====================== -->
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <!-- Project 1 -->
             <li>
                 <strong>Basic Calculator (C Programming)</strong><br>
                 A simple command-line calculator for basic arithmetic operations between two numbers, built as my first C programming project.
                 <br><a href="https://github.com/Keli281/simple-calculator-c.git" target="_blank">View Project on GitHub</a>
             </li>
-            
-            <!-- Project 2 -->
             <li>
                 <strong>BMI and Health Tracker (Python)</strong><br>
                 A CLI-based Python application that calculates BMI, saves records to a CSV file and allows users to view health history.
                 <br><a href="https://github.com/Keli281/bmi-tracker" target="_blank">View Project on GitHub</a>
             </li>
-            
-            <!-- Project 3 -->
             <li>
                 <strong>Basic Calculator (Python)</strong><br>
-                A basic CLI-based Python calculator that as well performs basic arithmetic operations focusing on error handling and a clean output, built as my first python project.
+                A basic CLI-based Python calculator that as well performs basic arithmetic operations focusing on error handling and a clean output.
                 <br><a href="https://github.com/Keli281/basic-calc-py" target="_blank">View Project on GitHub</a>
             </li>
         </ul>
     </section>
 
-    <!-- ======================
-         CONTACT SECTION 
-         ====================== -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="contact.html" target="_blank">Feel free to reach out!</a></p>
-        <!-- Note: Consider adding direct contact links/forms in future updates -->
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <p>Have a question, collaboration idea, or just want to connect? I'd love to hear from you!</p>
+
+        <form action="https://formspree.io/f/xkgzpdqd" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New message from Natalie Awinja Portfolio">
+           <input type="hidden" name="_next" value="thank-you.html">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+            </div>
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+
+        <div class="direct-contact">
+            <p><i class="fas fa-paper-plane"></i> <strong>Email me directly at:</strong></p>
+            <a href="mailto:awinjanatalie77@gmail.com" class="email-link">
+                <i class="fas fa-envelope"></i> Click to Email Me
+            </a>
+            <p class="email-fallback">
+                If the button doesn't open your email app, copy:<br>
+                <span class="manual-email">awinjanatalie77@gmail.com</span>
+            </p>
+            <p class="email-note">
+                <i class="fas fa-info-circle"></i> Note: Some browsers may block automatic email opening.
+            </p>
+        </div>
     </section>
 
-    <!-- ======================
-         FOOTER 
-         ====================== -->
     <footer>
         <p>&copy; 2025 Natalie Awinja. All rights reserved.</p>
-        
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Sticky navigation on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
