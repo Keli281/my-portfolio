@@ -1,8 +1,8 @@
 /* style.css - Premium Dark Blue & Black Portfolio */
 
 /* ======================
-   COLOR VARIABLES
-   ====================== */
+    COLOR VARIABLES
+    ====================== */
 :root {
     --primary-blue: #0a84ff;
     --secondary-blue: #64b5f6;
@@ -17,8 +17,8 @@
 }
 
 /* ======================
-   RESET & BASE STYLES
-   ====================== */
+    RESET & BASE STYLES
+    ====================== */
 * {
     margin: 0;
     padding: 0;
@@ -47,18 +47,146 @@ ul {
     list-style: none; /* Remove bullet points from lists */
 }
 
-/* ======================
-   HEADER (HERO) SECTION STYLES
-   ====================== */
+/* ======================================================================
+    MODIFIED: HERO/ABOUT SECTION STYLES (New Layout)
+    ====================================================================== */
+.hero-section {
+    padding: 8rem 2rem 4rem; /* Top padding to account for fixed nav */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-layout-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Creates two columns: 1 part for image, 2 parts for text */
+    gap: 4rem;
+    align-items: center; /* Vertically center the content */
+    padding: 0 2rem;
+}
+
+/* Left Column: Image */
+.about-image-wrapper {
+    position: relative;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 20px; /* Outer container rounded corners */
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(10, 132, 255, 0.2);
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Inner image rounded corners */
+    display: block;
+    box-shadow: var(--neon-glow);
+    transition: transform 0.5s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Right Column: Content */
+.about-title {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+/* Adds a small line to the left of the title, using your theme colors */
+.about-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    background-color: var(--accent-blue);
+    box-shadow: var(--neon-glow);
+}
+
+.about-name {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, var(--primary-blue), var(--accent-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: var(--neon-glow);
+}
+
+.about-description {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+/* Styles for the list of links (e.g., 'Early Life') */
+.about-links-list {
+    margin-top: 2rem;
+    padding-left: 0;
+}
+
+.about-links-list li {
+    margin-bottom: 1rem;
+}
+
+.about-links-list a {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+/* Triangle icon using a pseudo-element, styled with your theme colors */
+.about-links-list a::before {
+    content: '→';
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+    transition: var(--transition);
+}
+
+.about-links-list a:hover {
+    color: var(--accent-blue);
+    transform: translateX(5px);
+}
+
+.about-links-list a:hover::before {
+    transform: translateX(5px);
+}
+
+/* ======================================================================
+    Original styles for other sections (maintained)
+    ====================================================================== */
+
+/* Original header styles are no longer needed for the hero section, but can be reused for other pages if needed. I've commented it out to avoid conflicts. */
+/*
 header {
     background-color: var(--dark-blue);
     color: var(--text-light);
-    padding: 6rem 2rem 4rem; /* Adjusted for consistency with main portfolio header */
+    padding: 6rem 2rem 4rem;
     text-align: center;
     position: relative;
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba(10, 132, 255, 0.2);
 }
+*/
 
 /* Gradient underline effect for header */
 header::after {
@@ -71,84 +199,6 @@ header::after {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);
     box-shadow: var(--neon-glow);
-}
-
-header h1 {
-    font-size: 3.5rem; /* Adjusted for consistency with main portfolio header */
-    margin-bottom: 1.5rem;
-    background: linear-gradient(to right, var(--primary-blue), var(--accent-blue));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; /* Makes the text transparent to show the gradient */
-    text-shadow: var(--neon-glow);
-    letter-spacing: -0.5px;
-}
-
-header p {
-    max-width: 800px; /* Adjusted for consistency with main portfolio header */
-    margin: 0 auto;
-    font-size: 1.2rem; /* Adjusted for consistency with main portfolio header */
-    color: var(--text-gray);
-    line-height: 1.8;
-}
-
-/* Specific styling for the hero section on contact.html */
-.hero {
-    padding: 5rem 2rem 3rem; /* Slightly different padding for contact page hero */
-}
-
-.hero h1 {
-    font-size: 2.5rem; /* Specific font size for contact page hero title */
-}
-
-.hero p {
-    max-width: 600px; /* Specific max-width for contact page hero paragraph */
-    font-size: 1.1rem; /* Specific font size for contact page hero paragraph */
-}
-
-/* ======================
-   LAYOUT CONTAINER
-   ====================== */
-.container {
-    max-width: 800px; /* Max width for the main content container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 2rem; /* Horizontal padding */
-}
-
-/* ======================
-   GENERAL SECTION STYLES (for portfolio pages)
-   ====================== */
-section {
-    background-color: rgba(10, 14, 23, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    border-left: 3px solid var(--primary-blue);
-    box-shadow: var(--shadow);
-    padding: 3rem;
-    margin: 2.5rem auto;
-    max-width: 1000px; /* Wider max-width for general sections */
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden; /* Ensures pseudo-elements stay within bounds */
-}
-
-/* Corner background effect for general sections */
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(0, 247, 255, 0.1) 0%, transparent 70%);
-    z-index: -1;
-}
-
-/* Hover effect for general sections */
-section:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px -10px rgba(0, 132, 255, 0.3);
-    border-left-color: var(--accent-blue);
 }
 
 /* General H2 heading style with blinking cursor effect */
@@ -186,6 +236,42 @@ h2::after {
     background: linear-gradient(90deg, var(--primary-blue), transparent);
 }
 
+/* ======================
+    GENERAL SECTION STYLES (for portfolio pages)
+    ====================== */
+section {
+    background-color: rgba(10, 14, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-blue);
+    box-shadow: var(--shadow);
+    padding: 3rem;
+    margin: 2.5rem auto;
+    max-width: 1000px; /* Wider max-width for general sections */
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden; /* Ensures pseudo-elements stay within bounds */
+}
+
+/* Corner background effect for general sections */
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(0, 247, 255, 0.1) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* Hover effect for general sections */
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px -10px rgba(0, 132, 255, 0.3);
+    border-left-color: var(--accent-blue);
+}
+
 h3 {
     color: var(--secondary-blue);
     margin: 1.5rem 0 1rem;
@@ -199,8 +285,8 @@ h3 {
 }
 
 /* ======================
-   PROJECTS SECTION STYLES
-   ====================== */
+    PROJECTS SECTION STYLES
+    ====================== */
 #projects ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -275,8 +361,8 @@ h3 {
 }
 
 /* ======================
-   CONTACT FORM STYLES (Specific to contact.html)
-   ====================== */
+    CONTACT FORM STYLES (Specific to contact.html)
+    ====================== */
 .contact-form {
     background-color: rgba(10, 14, 23, 0.8);
     backdrop-filter: blur(10px);
@@ -360,8 +446,8 @@ h3 {
 }
 
 /* ======================
-   DIRECT CONTACT FALLBACK STYLES
-   ====================== */
+    DIRECT CONTACT FALLBACK STYLES
+    ====================== */
 .direct-contact {
     margin-top: 2rem;
     padding-top: 2rem;
@@ -402,8 +488,8 @@ h3 {
 }
 
 /* ======================
-   ADDITIONAL LINK STYLES (for main portfolio sections)
-   ====================== */
+    ADDITIONAL LINK STYLES (for main portfolio sections)
+    ====================== */
 
 /* Style for the general contact link */
 #contact a {
@@ -439,8 +525,8 @@ h3 {
 }
 
 /* ======================
-   DOWNLOAD BUTTON (CV/Resume)
-   ====================== */
+    DOWNLOAD BUTTON (CV/Resume)
+    ====================== */
 .cv-button {
     display: inline-flex;
     align-items: center;
@@ -464,8 +550,8 @@ h3 {
 }
 
 /* ======================
-   FOOTER STYLES
-   ====================== */
+    FOOTER STYLES
+    ====================== */
 footer {
     text-align: center;
     padding: 2rem;
@@ -476,8 +562,8 @@ footer {
 }
 
 /* ======================
-   FLOATING PARTICLES ANIMATION
-   ====================== */
+    FLOATING PARTICLES ANIMATION
+    ====================== */
 body::before {
     content: '';
     position: fixed;
@@ -500,8 +586,109 @@ body::before {
 }
 
 /* ======================
-   RESPONSIVE DESIGN
-   ====================== */
+    NAVIGATION STYLES
+    ====================== */
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(5, 8, 15, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(10, 132, 255, 0.1);
+}
+
+#main-nav.scrolled {
+    background-color: rgba(5, 8, 15, 0.98);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, var(--primary-blue), var(--accent-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+    text-shadow: var(--neon-glow);
+}
+
+.nav-links a i {
+    font-size: 0.9rem;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ======================
+    RESPONSIVE DESIGN (Updated)
+    ====================== */
+@media (max-width: 992px) {
+    /* For tablets and smaller desktops, collapse the two-column layout */
+    .about-layout-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-image-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .about-content-wrapper {
+        text-align: center;
+    }
+
+    .about-title::before {
+        content: none;
+    }
+
+    .about-links-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
 @media (max-width: 768px) {
     /* General header adjustments */
     header {
@@ -536,4 +723,171 @@ body::before {
         padding: 2rem;
         margin: 2rem 1rem; /* Adjusted margin for contact page form on smaller screens */
     }
+
+    /* Mobile Navigation */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--darker-blue);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        clip-path: circle(0px at 90% -10%);
+        transition: all 0.5s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Adjust section padding to account for fixed nav */
+    section {
+        padding-top: 6rem;
+    }
+    
+    header {
+        padding-top: 8rem;
+    }
 }
+#contact {
+    text-align: center;
+    padding: 3rem;
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+#contact .disabled-form {
+    background-color: rgba(10, 14, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-blue);
+    box-shadow: var(--shadow);
+    padding: 2.5rem;
+    margin: 2rem auto;
+    transition: var(--transition);
+    max-width: 600px;
+}
+
+#contact .disabled-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px -10px rgba(0, 132, 255, 0.3);
+    border-left-color: var(--accent-blue);
+}
+
+#contact .form-group {
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    background: rgba(5, 8, 15, 0.5);
+    border: 1px solid rgba(10, 132, 255, 0.3);
+    border-radius: 6px;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: var(--neon-glow);
+    background: rgba(5, 8, 15, 0.7);
+}
+
+#contact textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+#contact button[type="submit"] {
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
+    color: var(--dark-blue);
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px -5px var(--primary-blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#contact button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px -5px var(--primary-blue),
+                0 0 15px rgba(0, 247, 255, 0.5);
+}
+
+#contact button[type="submit"] i {
+    font-size: 1.2rem;
+}
+
+/* Direct Contact Section */
+#contact .direct-contact {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px dashed rgba(10, 132, 255, 0.3);
+}
+
+#contact .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, rgba(10, 132, 255, 0.2), transparent);
+    border-radius: 6px;
+    color: var(--accent-blue);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    transition: var(--transition);
+    font-size: 1.1rem;
+}
+
+#contact .email-link:hover {
+    background: linear-gradient(90deg, rgba(10, 132, 255, 0.4), transparent);
+    border-color: var(--accent-blue);
+    box-shadow: var(--neon-glow);
+    transform: translateY(-2px);
+}
+
+#contact .manual-email {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background: rgba(5, 8, 15, 0.5);
+    border-radius: 4px;
+    font-family: monospace;
+    margin: 1rem 0;
+    border: 1px solid rgba(10, 132, 255, 0.2);
+}
+
+#contact .email-note {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 1rem;}
