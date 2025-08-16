@@ -1,227 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalie Awinja Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-    <nav id="main-nav">
-        <div class="nav-container">
-            <div class="nav-brand">Natalie Awinja</div>
-            <ul class="nav-links">
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Natalie Awinja Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/png" href="media/icon.png">
+        <meta name="description" content="Portfolio of Natalie Awinja, a Computer Science student. Explore my skills, projects, and contact information.">
+        <meta name="keywords" content="Natalie Awinja, Computer Science, Portfolio">
+    </head>
+    <body>
 
-    <section id="about" class="hero-section">
-        <div class="about-layout-container">
-            <div class="about-image-wrapper">
-                <img src="image.jpg" alt="Natalie Awinja" class="profile-image">
-            </div>
+        <header>
             
-            <div class="about-content-wrapper">
-                <h1 class="about-title">About Me</h1>
-                <h1 class="about-name">Natalie Awinja</h1>
-                <p class="about-description">
-                    Hi, I'm Natalie Awinja Keli, a second year Computer Science student with aspirations to specialize in AI/ML engineering and data science. With a strong passion for technology and innovation, I'm committed to sharpening my skills in programming, problem-solving, and collaborative development. My goal is to become a well-rounded developer capable of building scalable, user-centered solutions that address real-world challenges.
-                    <br><br>
-                    I have foundational knowledge in C programming language, HTML, and CSS, and I'm currently focused on building a strong technical base in Python, Git, and MySQL to support my journey into intelligent systems and data-driven development. Every line of code I write brings me closer to the impactful career I envision.
-                </p>
-                
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills & Proficiency</h2>
+            <nav id="main-nav">
+                    <div class="nav-container">
+                        <div class="nav-brand">Natalie Awinja</div>
+                        <ul class="nav-links">
+                            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                            <li><a href="#work-experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        </ul>
+                        <button class="nav-toggle" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+        </nav>
+        </header>
+
+        <main>
+
+            <section id="about" class="hero-section">
+                <div class="about-layout-container">
+                    <div class="about-image-wrapper">
+                        <img src="media/natalie.jpg" alt="Natalie Awinja" class="profile-image">
+                    </div>
+                    
+                    <div class="about-content-wrapper">
+                        <h1 class="about-title">About Me</h1>
+                        <p class="about-description">
+                            Hi, I'm Natalie Awinja Keli, a second year Computer Science student with aspirations to specialize in AI/ML engineering and data science. I'm committed to sharpening my skills in programming, problem-solving, and collaborative development. My goal is to acquire proficiency in building scalable, user-centered solutions that address real-world challenges.
+                            <br><br>
+                            I have foundational knowledge in C programming language and have experience in building interactive and visually appealing websites with HTML5, CSS, and JavaScript. I'm currently focused on building a strong technical base in Python, Git and SQL for data-driven development, using MySQL to apply these skills.
+                        
+                    </div>
+                </div>
+            </section>
         
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Python (Beginner level)</li>
-            <li>C Programming</li>
-            <li>HTML & CSS (Basics)</li>
-            <li>Git & GitHub (Basic version control)</li>
-        </ul>
-
-        <h3>Tools</h3>
-        <ul>
-            <li>Visual Studio Code</li>
-            <li>Git Bash</li>
-        </ul>
-
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Problem-solving</li>
-            <li>Teamwork</li>
-            <li>Time Management</li>
-            <li>Communication</li>
-            <li>Self-Motivation</li>
-            <li>Attention to detail</li>
-        </ul>
-    </section>
-
-    <section id="interests">
-        <h2>Interests</h2>
-        <p>
-            I'm especially drawn to the fields of Artificial Intelligence, Machine Learning Engineering, and Data Science; where technology meets problem-solving at scale. I'm fascinated by the potential of intelligent systems to analyze data, learn patterns, and make informed decisions. While my core focus lies in AI-driven development, I also have a growing appreciation for web development, particularly in building intuitive user experiences that connect people to powerful solutions.
-        </p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Multimedia University of Kenya</strong><br>
-                BSc. Computer Science (2024 – Present)<br>
-                Focus: Programming, Software Engineering, Data Structures, and Algorithms.
-            </li>
-            <li>
-                <strong>Power Learn Project (PLP)</strong><br>
-                Full Stack Software Development Program (July Cohort 2025)<br>
-                Learning: HTML, CSS, JavaScript, Python, MySQL, Git, and Deployment Tools.
-            </li>
-            <li>
-                <strong>Alison.com</strong><br>
-                Python for Data Science<br>
-                Online Certification Course (In Progress)
-            </li>
-            <li>
-                <strong>Maryhill Girls High School – Thika</strong><br>
-                K.C.S.E Mean Grade: A– (2021/2022)
-            </li>
-        </ul>
-        <br>
-        <a href="Natalie_CV.pdf" download class="cv-button">📜 Download My CV</a>
-    </section>
-
-    <section class="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Kenya Certificate of Secondary Education (KCSE) – 2022
-                <br><a href="kcse_certificate.pdf" target="_blank">View Certificate</a>
-            </li>
-            <li>Introduction to Python: Alison.com <strong>(In Progress)</strong></li>
-            <li>Power Learn Project (PLP) <strong>(In Progress)</strong></li>
-            <li>Bachelor of Science in Computer Science: Multimedia University of Kenya <strong>(In Progress)</strong></li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Basic Calculator (C Programming)</strong><br>
-                A simple command-line calculator for basic arithmetic operations between two numbers, built as my first C programming project.
-                <br><a href="https://github.com/Keli281/simple-calculator-c.git" target="_blank">View Project on GitHub</a>
-            </li>
-            <li>
-                <strong>BMI and Health Tracker (Python)</strong><br>
-                A CLI-based Python application that calculates BMI, saves records to a CSV file and allows users to view health history.
-                <br><a href="https://github.com/Keli281/bmi-tracker" target="_blank">View Project on GitHub</a>
-            </li>
-            <li>
-                <strong>Basic Calculator (Python)</strong><br>
-                A basic CLI-based Python calculator that as well performs basic arithmetic operations focusing on error handling and a clean output.
-                <br><a href="https://github.com/Keli281/basic-calc-py" target="_blank">View Project on GitHub</a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <p>Have a question, collaboration idea, or just want to connect? I'd love to hear from you!</p>
-
-        <form action="https://formspree.io/f/xkgzpdqd" method="POST" class="contact-form">
-            <input type="hidden" name="_subject" value="New message from Natalie Awinja Portfolio">
-           <input type="hidden" name="_next" value="thank-you.html">
-
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
-            </div>
-            <button type="submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-        </form>
-
-        <div class="direct-contact">
-            <p><i class="fas fa-paper-plane"></i> <strong>Email me directly at:</strong></p>
-            <a href="mailto:awinjanatalie77@gmail.com" class="email-link">
-                <i class="fas fa-envelope"></i> Click to Email Me
-            </a>
-            <p class="email-fallback">
-                If the button doesn't open your email app, copy:<br>
-                <span class="manual-email">awinjanatalie77@gmail.com</span>
-            </p>
-            <p class="email-note">
-                <i class="fas fa-info-circle"></i> Note: Some browsers may block automatic email opening.
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Natalie Awinja. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80, // Adjust for fixed header
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
+            <section id="skills">
+                <h2>Skills & Proficiency</h2>
+                <div class="skills-flex-container">
+                    <div class="skills-column">
+                        <h3>Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-label">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;">80%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%;">65%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 30%;">30%</div>
+                                </div>
+                            </li>    
+                            <li>
+                                <span class="skill-label">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%;">40%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Git & GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;">70%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Visual Studio Code</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;">80%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%;">40%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Professional Skills</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <span class="skill-label">Problem-solving</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;">85%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Teamwork</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;">90%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Time Management</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;">95%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Communication</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;">90%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Self-Motivation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;">95%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-label">Attention to detail</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;">90%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+            </section>
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
+            <section id="interests">
+                <h2>Interests</h2>
+                <div class="interests-container">
+                    <div class="interest-card">
+                        <h3>Web Development</h3>
+                        <p>Building intuitive and visually appealing websites that connect people to powerful solutions.</p>
+                    </div>
+                    <div class="interest-card">
+                        <h3>AI/ML Learning</h3>
+                        <p>Exploring intelligent systems that analyze data, learn patterns, and make informed decisions.</p>
+                    </div>
+                    <div class="interest-card">
+                        <h3>Problem Solving</h3>
+                        <p>Applying analytical thinking to tackle real-world challenges and deliver effective solutions.</p>
+                    </div>
+                    <div class="interest-card">
+                        <h3>Tech Innovations</h3>
+                        <p>Staying curious about emerging technologies and their impact on society and industry.</p>
+                    </div>
+                </div>
+            </section>
 
-        // Sticky navigation on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
-</body>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div class="experience-container">
+                    <h3>Rapporteur</h3>
+                    <p><strong>Staff and Partners’ Training Workshop on Organizational Gender Transformative Approach and Unpacking Barriers to Girls’ Education in Marginalized Communities in Kenya by Grassroots Nest for Innovations and Change (GRiC)</strong></p>
+                    <p><em>Dates: 10th to 13th June 2025</em></p>
+                    <ul>
+                        <li>Took detailed notes and summarized key discussions from training sessions.</li>
+                        <li>Delivered clear and well-structured reports highlighting key insights.</li>
+                        <li>Practiced professional communication and time management.</li>
+                        <li>Facilitated recap sessions to reinforce previous day’s lessons and promote engagement.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Multimedia University of Kenya</h3>
+                        <p>BSc. Computer Science (2024 – Present)<br>
+                        Focus: Programming, Software Engineering, Data Structures, and Algorithms.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Power Learn Project (PLP)</h3>
+                        <p>Full Stack Software Development Program (July Cohort 2025)<br>
+                        Learning: HTML, CSS, JavaScript, Python, MySQL, Git, and Deployment Tools.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Alison</h3>
+                        <p>Python for Data Science<br>
+                        Online Certification Course (In Progress)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Maryhill Girls High School – Thika</h3>
+                        <p>K.C.S.E Mean Grade: A– minus (2021/2022)</p>
+                    </div>
+                </div>
+                <br>
+                <div class="cv-download">
+                    <p>For a detailed overview of my education background and experience, download my complete CV:</p>
+                    <a href="Natalie_CV.pdf" download class="cv-button">📜 Download My CV</a>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>KCSE – 2022</h3>
+                        <p>Kenya Certificate of Secondary Education<br>
+                        <a href="kcse_certificate.pdf" target="_blank">View Certificate</a></p>
+                    </div>
+                    <div class="card">
+                        <h3>Python course</h3>
+                        <p>Alison.com <strong>(In Progress)</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Power Learn Project (PLP)</h3>
+                        <p><strong>(In Progress)</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>BSc. Computer Science</h3>
+                        <p>Multimedia University of Kenya <strong>(In Progress)</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Basic Calculator (C Programming)</h3>
+                        <p>A simple command-line calculator for basic arithmetic operations between two numbers, built as my first C programming project.</p>
+                        <a href="https://github.com/Keli281/simple-calculator-c.git" target="_blank">View Project on GitHub</a>
+                    </div>
+                    <div class="card">
+                        <h3>BMI and Health Tracker (Python)</h3>
+                        <p>A CLI-based Python application that calculates BMI, saves records to a CSV file and allows users to view health history.</p>
+                        <a href="https://github.com/Keli281/bmi-tracker" target="_blank">View Project on GitHub</a>
+                    </div>
+                    <div class="card">
+                        <h3>Basic Calculator (Python)</h3>
+                        <p>A basic CLI-based Python calculator that performs basic arithmetic operations focusing on error handling and a clean output. This was built as my first Python project.</p>
+                        <a href="https://github.com/Keli281/basic-calc-py" target="_blank">View Project on GitHub</a>
+                    </div>
+                     <a href="https://github.com/Keli281" target="_blank" class="view-more-projects">View More Projects on my GitHub account</a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+                <p>Have a question, collaboration idea, or just want to connect? I'd love to hear from you!</p>
+
+                <form action="https://formspree.io/f/xkgzpdqd" method="post" class="contact-form">
+                    <input type="hidden" name="_subject" value="New message from Natalie Awinja Portfolio">
+                    <input type="hidden" name="_next" value="https://keli281.github.io/my-portfolio/thank-you.html">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <div class="direct-contact">
+                    <p><strong>You can email me directly at:</strong></p>
+                     <a href="mailto:awinjanatalie77@gmail.com"><span class="manual-email">awinjanatalie77@gmail.com</span></a>
+            
+                    
+                </div>
+
+                <div class="connect-social">
+                    <h3>Feel free to connect</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/natalie-awinja-4675aa305/" class="social-link linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Keli281" class="social-link github" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:awinjanatalie77@gmail.com" class="social-link email" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/254712551725" class="social-link whatsapp" target="_blank" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer>
+            <nav class="footer-nav">
+                <a href="#about">About</a> |
+                <a href="#skills">Skills</a> |
+                <a href="#education">Education</a> |
+                <a href="#work-experience">Experience</a> |
+                <a href="#projects">Projects</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-copy">
+                <p>&copy; 2025 Natalie Awinja. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </body>
 </html>

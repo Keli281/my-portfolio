@@ -3,11 +3,9 @@
 This is my first personal developer portfolio built using **HTML** and **CSS**. It showcases who I am, my educational background, skills, interests, certifications and the projects I have created so far.
 
 
-This is my first personal developer portfolio built using **HTML** and **CSS**. It showcases who I am, my educational background, skills, interests, certifications and the projects I have created so far.
-
-![My Portfolio Demo Screenshot 1](images/my-portfolio-demo.png)
-![My Portfolio Demo Screenshot 2](images/my-portfolio-demo-2.png)
-![My Portfolio Demo Screenshot 3](images/my-portfolio-demo-3.png)
+![My Portfolio Demo Screenshot 1](media/portfolio-demo-1.png)
+![My Portfolio Demo Screenshot 2](media/portfolio-demo-2.png)
+![My Portfolio Demo Screenshot 3](media/portfolio-demo-3.png)
 
 
 
@@ -18,18 +16,17 @@ This is my first personal developer portfolio built using **HTML** and **CSS**. 
 - **Responsive layout:** Ensures a seamless viewing experience across various devices (desktops, tablets, and mobile phones).
 - **Project showcase with clickable links:** Easily navigate to and explore my individual projects.
 - **Downloadable CV:** Convenient for recruiters and hiring managers to quickly access my resume.
-- **Contact form (non-functional placeholder):** Demonstrates form structure and design, indicating readiness for backend integration.
-- **Clean and modern visual design:** Built with attention to detail using vanilla CSS for optimal performance and customizability.
+- **Contact form:** Demonstrates form structure and design.
+- **Clean and modern visual design:** Built with attention to detail for optimal performance and customizability.
 
 ## 📁 Project Structure
 
 portfolio/
-├── index.html                 
-├── contact.html                
+├── index.html                                
 ├── style.css                  
-├── images/                     
+├── media/                     
 ├── kcse_certification.pdf      
-├── natalie_cv_final.pdf        
+├── natalie_CV_final.pdf        
 ├── LICENSE                     
 └── README.md                   
 
@@ -37,7 +34,7 @@ portfolio/
 ## 🚀 Technologies Used
 
 - HTML5
-- CSS3 (Vanilla)
+- CSS3
 - Visual Studio Code
 - Git & GitHub
 
