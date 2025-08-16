@@ -522,7 +522,7 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .nav-links {
         display: none;
         flex-direction: column;
