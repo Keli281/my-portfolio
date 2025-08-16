@@ -522,7 +522,7 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -545,5 +545,15 @@ footer {
 
     .about-layout-container {
         flex-direction: column;
+    }
+    .cards-container, .interests-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .card, .interest-card {
+        width: 100%;
+        max-width: 400px; /* or 100% for full width */
+        margin: 0 auto;
     }
 }
