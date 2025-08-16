@@ -546,14 +546,15 @@ footer {
     .about-layout-container {
         flex-direction: column;
     }
-    .cards-container, .interests-container {
+ .cards-container, .interests-container {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
     .card, .interest-card {
         width: 100%;
-        max-width: 400px; /* or 100% for full width */
+        max-width: 100%; 
+        box-sizing: border-box;
         margin: 0 auto;
     }
 }
