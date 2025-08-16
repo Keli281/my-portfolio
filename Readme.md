@@ -40,7 +40,7 @@ portfolio/
 
 ## 🔗 Live Demo
 
-[View Portfolio Website](https://Keli281.github.io/my-portfolio)  
+[View Portfolio Website](https://keli281.github.io/my-portfolio/)  
 
 ## 📂 How to View Locally
 
@@ -56,7 +56,7 @@ portfolio/
 
 ## ✨ My Projects
 
-Here are some of the projects featured in this portfolio, with direct links to their respective GitHub repositories:
+Here are some of my projects that are featured in this portfolio, with direct links to their respective GitHub repositories:
 
 * **BMI Tracker:** A Python application to track and visualize Body Mass Index over time, allowing users to log their health data.
     * [GitHub Repository for BMI Tracker](https://github.com/Keli281/bmi-tracker)
