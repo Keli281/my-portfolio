@@ -16,25 +16,27 @@ This is my first personal developer portfolio built using **HTML** and **CSS**. 
 - **Responsive layout:** Ensures a seamless viewing experience across various devices (desktops, tablets, and mobile phones).
 - **Project showcase with clickable links:** Easily navigate to and explore my individual projects.
 - **Downloadable CV:** Convenient for recruiters and hiring managers to quickly access my resume.
-- **Contact form:** Demonstrates form structure and design.
+- **Contact form:** Demonstrates form structure and design whic is functional as well.
 - **Clean and modern visual design:** Built with attention to detail for optimal performance and customizability.
 
 ## 📁 Project Structure
 
 portfolio/
 ├── index.html                                
-├── style.css                  
+├── style.css  
+├── script.js
 ├── media/                     
 ├── kcse_certification.pdf      
 ├── natalie_CV_final.pdf        
 ├── LICENSE                     
-└── README.md                   
+└── README.md                                   
 
 
 ## 🚀 Technologies Used
 
 - HTML5
 - CSS3
+- JavaScript
 - Visual Studio Code
 - Git & GitHub
 
@@ -58,19 +60,14 @@ portfolio/
 
 Here are some of my projects that are featured in this portfolio, with direct links to their respective GitHub repositories:
 
-* **BMI Tracker:** A Python application to track and visualize Body Mass Index over time, allowing users to log their health data.
-    * [GitHub Repository for BMI Tracker](https://github.com/Keli281/bmi-tracker)
+* **Website Portfolio for my first client:** A static Portfolio Website that showcases their education and achievements with a functional contact form and a downloadable CV.
+    * [GitHub Repository for portfolio](https://github.com/Keli281/my-clients-portfolio)
     
-* **Basic Calculator (Python):** A command-line calculator application demonstrating basic arithmetic operations implemented in Python.
-    * [GitHub Repository for Basic Calculator (Python)](https://github.com/Keli281/basic-calc-py)
-
-* **Simple Calculator (C):** A console-based calculator application built using the C programming language.
-    * [GitHub Repository for Simple Calculator (C)](https://github.com/Keli281/simple-calculator-c)
 
 ## ✨ Future Enhancements
 
 - Implement full functionality for the contact form with a backend service (e.g., Node.js, Python Flask).
-- Integrate JavaScript for more interactive elements and dynamic content.
+- Integrate JavaScript Frameworks for more interactive elements and dynamic content.
 - Add more projects showcasing new skills (e.g., API integration, full-stack development).
 
 ## 📄 License
