@@ -37,7 +37,6 @@ portfolio/
 - HTML5
 - CSS3
 - JavaScript
-- Visual Studio Code
 - Git & GitHub
 
 ## 🔗 Live Demo
