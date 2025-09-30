@@ -52,6 +52,10 @@ body.dark-mode {
     color: var(--dark-text);
 }
 
+li {
+    list-style: none;
+}
+
 /* Container with proper mobile padding */
 .container {
     max-width: 1200px;
@@ -301,79 +305,92 @@ section:nth-child(even) {
     line-height: 1.8;
 }
 
-/* Skills Section - FIXED CENTERING */
+/* Skills Section  */
 #skills {
     width: 100%;
     padding: 5rem 20px;
     text-align: center;
 }
 
-.skills-flex-container-centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
 }
 
-.skills-list {
-    list-style: none;
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto; 
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
-
-.skill-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+.skills-category {
+    background-color: var(--light-card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid var(--light-border);
     text-align: left;
-    width: 100%;
 }
 
-.skill-bar {
-    height: 15px;
-    background-color: var(--light-border);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
+.dark-mode .skills-category {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
 }
 
-.dark-mode .skill-bar {
-    background-color: var(--dark-border);
+.skills-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
-.skill-progress {
-    height: 100%;
-    background-color: var(--light-accent);
-    border-radius: 5px;
-    width: 0;
-    transition: width 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 600;
+.skills-category h3 {
+    color: var(--light-accent);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--light-border);
+    padding-bottom: 0.5rem;
 }
 
-.dark-mode .skill-progress {
-    background-color: var(--dark-accent);
+.dark-mode .skills-category h3 {
+    color: var(--dark-accent);
+    border-bottom-color: var(--dark-border);
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-category li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--light-border);
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.dark-mode .skills-category li {
+    border-bottom-color: var(--dark-border);
+}
+
+.skills-category li:last-child {
+    border-bottom: none;
+}
+
+.skills-category li:hover {
+    color: var(--light-accent);
+    transform: translateX(5px);
+}
+
+.dark-mode .skills-category li:hover {
+    color: var(--dark-accent);
 }
 
 /* All Sections - Consistent Padding */
-#interests, #work-experience, #education, .certifications, #projects, #contact {
+#interests, #work-experience, #education, #projects, #contact {
     width: 100%;
     padding: 5rem 20px; /* Consistent padding on all sides */
 }
+
 
 /* Interests Section */
 .interests-container {
@@ -439,7 +456,7 @@ section:nth-child(even) {
 }
 
 .experience-container ul {
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 .experience-container li {
@@ -545,6 +562,16 @@ section:nth-child(even) {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 2rem;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
 }
 
 /* GitHub Button */
@@ -822,6 +849,27 @@ footer {
         padding: 4rem 20px;
     }
     
+    /* Skills Section Mobile */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 10px;
+    }
+    
+    .skills-category {
+        padding: 1.5rem;
+    }
+    
+    .skills-category h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skills-category li {
+        padding: 0.5rem 0;
+        font-size: 0.95rem;
+    }
+    
     /* Layout */
     .interests-container,
     .cards-container {
@@ -842,11 +890,6 @@ footer {
     .profile-image {
         max-width: 220px;
         border-radius: 130px;
-    }
-    
-    /* Skills section mobile optimization */
-    .skills-list {
-        width: 90%; 
     }
     
     /* Ensure no horizontal overflow */
@@ -878,6 +921,24 @@ footer {
         gap: 2rem;
     }
     
+    /* Skills Section Extra Small */
+    .skills-container {
+        gap: 1rem;
+    }
+    
+    .skills-category {
+        padding: 1.2rem;
+    }
+    
+    .skills-category h3 {
+        font-size: 1.1rem;
+    }
+    
+    .skills-category li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+    
     .card, .interest-card, .experience-container {
         padding: 1.5rem;
     }
@@ -897,10 +958,6 @@ footer {
     .interests-container,
     .cards-container {
         width: 100%;
-    }
-    
-    .skills-list {
-        width: 100%; /* Full width on very small screens */
     }
     
     /* Remove margin/padding */
