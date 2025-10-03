@@ -4,6 +4,7 @@ This is my first personal developer portfolio built using **HTML** and **CSS**. 
 
 
 ![My Portfolio Demo Screenshot 1](media/portfolio-demo-1.png)
+![My Portfolio Demo Screenshot 2](media/portfolio-demo-2.png)
 ![My Portfolio Demo Screenshot 3](media/portfolio-demo-3.png)
 
 
