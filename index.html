@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Natalie Awinja Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="icon" type="image/png" href="media/icon.png">
         <meta name="description" content="Portfolio of Natalie Awinja, a Computer Science student. Explore my skills, projects, and contact information.">
@@ -39,6 +40,32 @@
             </nav>
         </header>
 
+        <!-- Mobile Sidebar -->
+        <div class="mobile-sidebar-overlay"></div>
+        <div class="mobile-sidebar">
+            <div class="sidebar-header">
+                <div class="nav-brand">Natalie Awinja</div>
+                <button class="sidebar-close" aria-label="Close navigation">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="sidebar-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#work-experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="sidebar-theme-toggle">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i> Toggle Theme
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <main>
             <section id="about" class="hero-section">
                 <div class="about-layout-container">
@@ -47,7 +74,7 @@
                     </div>
                     
                     <div class="about-content-wrapper">
-                        <h1 class="about-title">About Me</h1>
+                        <h1 class="about-title">ABOUT ME</h1>
                         <p class="about-description">
                             Hi, I'm Natalie Awinja Keli, a second year Computer Science student with aspirations to specialize in AI/ML engineering and data science. My goal is to acquire proficiency in building scalable, user-centered solutions that address real-world challenges.
                             <br><br>
@@ -154,7 +181,7 @@
                     <div class="card">
                         <h3>Maryhill Girls High School</h3>
                         <p><strong>Kenya Certificate of Secondary Education</strong><br>
-                        <em>Completed: 2022</em><br><br>
+                        <em>Completed: April 2022</em><br><br>
                         <strong>Mean Grade:</strong> A– (Minus)<br>
                         <strong>Certificate:</strong> 
                         <a href="media/kcse_certificate.pdf" download="Natalie_Awinja_KCSE_Certificate.pdf">
@@ -189,23 +216,30 @@
                         
                         <p><strong>Tech Stack:</strong> MERN Stack, Leaflet.js, OpenStreetMap</p>
                         <p><strong>Status:</strong> In Development | Expected Completion: November 2025</p>
+                        <p><strong>Collaboration:</strong> Developed with a friend as the final project for a Software Development Programme.</p>
                         
                         <a href="https://github.com/Keli281/community-watch-app" target="_blank">View Project on GitHub</a>
                     </div>
                     
                     <div class="card">
-                        <h3>Client Portfolio Website</h3>
-                        
-                        <img src="media/portfolio-screenshot.png" alt="Client Portfolio Website" class="project-image">
-                        
-                        <p><strong>Professional portfolio website built for a client to showcase their work and professional background.</strong></p>
-                        
-                        <p><strong>Key Features:</strong> Responsive design, downloadable resume, functional contact form, clean UI/UX</p>
-                        <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
-                        <p><strong>Status:</strong> Completed</p>
-                        
-                        <a href="https://github.com/Keli281/my-clients-portfolio" target="_blank">View Project on GitHub</a>
-                    </div>
+                    <h3>AgroAid - AI Powered Land Guardian</h3>
+                    <img src="media/agroaid.png" alt="AgroAid Land Monitoring Dashboard" class="project-image">
+                    <p><strong>A FullStack AI powered platform that detects land degradation risks using satellite data and predictive analytics before they become visible to the human eye.</strong></p>
+                    
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Real-time land monitoring with color-coded risk maps</li>
+                        <li>AI-powered recommendations for specific problem areas</li>
+                        <li>Interactive chatbot for real-time agricultural solutions</li>
+                        <li>Prevention strategies and crop recommendations</li>
+                    </ul>
+                    
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Leaflet.js, Node.js, Express.js, Python, RESTful APIs</p>
+                    <p><strong>Deployment:</strong> Vercel (Frontend), Render (Backend)</p>
+                    <p><strong>Collaboration:</strong> Developed with a friend as part of a Land ReGen Hackathon.</p>
+                    
+                    <a href="https://github.com/your-repo/agroaid" target="_blank">View Project on GitHub</a>
+                </div>
                 </div>
                 <a href="https://github.com/Keli281" target="_blank" class="view-more-projects">View More Projects on GitHub</a>
             </section>
