@@ -799,6 +799,11 @@ section:nth-child(even) {
     width: 100%;
 }
 
+#projects .card {
+    width: 100%;
+    max-width: 100%;
+}
+
 .card ul {
     list-style: none;
     padding-left: 0;
@@ -1138,6 +1143,10 @@ footer {
     
     .nav-links {
         gap: 1.5rem;
+    }
+
+     #projects .cards-container {
+        grid-template-columns: 1fr;
     }
 }
 
