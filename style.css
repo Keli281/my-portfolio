@@ -621,6 +621,9 @@ section:nth-child(even) {
     width: 100%;
     animation: fadeInUp 0.8s ease-out;
 }
+.experience-container + .experience-container {
+    margin-top: 2.5rem;
+}
 
 .dark-mode .experience-container {
     background-color: var(--dark-card-bg);
